@@ -1,0 +1,11 @@
+<html>
+    <body>
+        {% for object in object_list %}
+        <a href="{% url 'blog_detail' object.pk %}">{{ object.title }}<br></a>
+            
+        {% endfor %}
+
+    </body>
+
+
+</html>
