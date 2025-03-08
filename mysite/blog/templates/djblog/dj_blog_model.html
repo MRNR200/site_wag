@@ -1,10 +1,16 @@
+<!DOCTYPE html>
 <html>
+    <head>
+        <title>Blog List</title>
+    </head>
     <body>
+        <h2>Blog List</h2>
         {% for object in object_list %}
         <a href="{% url 'blog_detail' object.pk %}">{{ object.title }}<br></a>
             
         {% endfor %}
-
+        <br>
+        <a href="{% url 'blog_create' %}">Create a new blog</a>
     </body>
 
 
